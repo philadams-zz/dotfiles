@@ -1,0 +1,13 @@
+[core]
+    excludesfile = /Users/phil/.gitignore
+[user]
+    name = Phil Adams
+    email = computersnob@gmail.com
+[github]
+    user = philadams
+[color]
+    ui = auto
+[alias]
+    st = status
+    lg = log --stat --summary
+    l = log --oneline
