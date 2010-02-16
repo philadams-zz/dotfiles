@@ -32,8 +32,8 @@ set ruler
 set autoindent
 
 " describe how auto formatting is done (help: fo-table for details;
-" add 'a' for auto formatting)
-set formatoptions=tcqn
+" add 'a' for auto formatting and 'n' for numbers)
+set formatoptions=tcq
 
 " use spaces to when <Tab>ing (use CTRL-V<Tab> for a real tab)
 set expandtab
@@ -66,7 +66,7 @@ set showmatch
 set hlsearch
 
 " find-as-you-type
-set incsearch
+" set incsearch
 
 " make sure :s///gc toggling is disabled
 set noedcompatible
@@ -124,6 +124,56 @@ autocmd BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 " (should use http://www.vim.org/scripts/script.php?script_id=790
 " in addition!)
 let python_highlight_all=1
+
+" -----------------------------------------------------------
+" Insert-Mode Completion
+" -----------------------------------------------------------
+
+" order and what to complete. see ":help complete" for info
+set complete=.,w,b,u,t,i
+
+" adjust case of a keyword completion match
+set infercase
+
+" when completing tags in Insert mode show both the name
+" and any arguments (when a C function is inserted)
+set showfulltag
+
+function! InsertTabWrapper(direction)
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    elseif "backward" == a:direction
+        return "\<c-p>"
+    else
+        return "\<c-n>"
+    endif
+endfunction
+
+function! CleverTab(direction)
+    if pumvisible()
+        if "backward" == a:direction
+            return "\<c-p>"
+        else
+            return "\<c-n>"
+        end
+    endif
+    if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
+        return "\<Tab>"
+    elseif exists('&omnifunc') && &omnifunc != ''
+        return "\<c-x>\<c-o>"
+    else
+        if "backward" == a:direction
+            return "\<c-p>"
+        else
+            return "\<c-n>"
+        end
+    endif
+endfunction
+
+" use tab and shift+tab to cycle through completion results
+inoremap <tab> <c-r>=InsertTabWrapper ("forward")<cr>
+inoremap <s-tab> <c-r>=InsertTabWrapper ("backward")<cr>
 
 " -------------------------------------------------------------------
 " makefile settings
