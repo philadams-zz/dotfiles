@@ -2,7 +2,7 @@
     excludesfile = /Users/phil/.gitignore
 [user]
     name = Phil Adams
-    email = computersnob@gmail.com
+    email = phil@philadams.net
 [github]
     user = philadams
 [color]
@@ -10,4 +10,4 @@
 [alias]
     st = status
     lg = log --stat --summary
-    l = log --oneline
+    l = log --pretty=format:'%C(yellow)%h%Creset: %Cred%an%Creset (%Cgreen%ar%Creset)%n %s%n'
