@@ -8,6 +8,7 @@
 [color]
     ui = auto
 [alias]
+    co = checkout
     st = status
-    lg = log --stat --summary
     l = log --pretty=format:'%C(yellow)%h%Creset: %Cred%an%Creset (%Cgreen%ar%Creset)%n %s%n'
+    lg = log --stat --summary
