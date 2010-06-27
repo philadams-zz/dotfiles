@@ -10,7 +10,7 @@
 " -------------------------------------------------------------------
 
 " set the textwidth
-"set textwidth=79
+set textwidth=78
 
 " enable backspace to delete anything (including \n) in insert mode
 set backspace=indent,eol,start
@@ -30,6 +30,9 @@ set ruler
 
 " copy the indent from teh current line when starting a new line
 set autoindent
+
+" set default leader (personal modifier)
+let mapleader=","
 
 " describe how auto formatting is done (help: fo-table for details;
 " add 'a' for auto formatting and 'n' for numbers)
@@ -116,14 +119,17 @@ set showmode
 " -------------------------------------------------------------------
 " python settings
 " -------------------------------------------------------------------
- 
-" display tabs at the beginning of a line in python mode as bad
-autocmd BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 
 " enable all possible python highlighting options
 " (should use http://www.vim.org/scripts/script.php?script_id=790
 " in addition!)
 let python_highlight_all=1
+
+" call nosetests
+function! Test()
+    :execute ":!nosetests"
+endfunction
+nnoremap <leader>t :call Test()<cr>
 
 " -----------------------------------------------------------
 " Insert-Mode Completion
@@ -207,3 +213,4 @@ set comments+=f:---,f:- " markdown style headers (---*) formatted properly
 
 " latex formatting
 set comments+=:%,f:\\begin,f:\\end,f:\\item,f:\\usepackage,f:\\if,f:\\else,f:\\set,f:\\title,f:\\author,f:\\date,f:\\bib,f:\\make
+
