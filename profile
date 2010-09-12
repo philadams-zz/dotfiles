@@ -24,6 +24,9 @@ alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/C
 topten() { # 10 most common recent commands
     history | awk '{print $2}' | sort | uniq -c | sort -rn | grep -v 'topten' | head -10
 }
+myip() {
+    curl http://ip.appspot.com
+}
 
 # editors
 export EDITOR=vim
