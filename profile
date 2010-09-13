@@ -27,6 +27,9 @@ topten() { # 10 most common recent commands
 myip() {
     curl http://ip.appspot.com
 }
+calc() {
+    echo "$1" | bc
+}
 
 # editors
 export EDITOR=vim
