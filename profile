@@ -12,7 +12,7 @@ export HISTCONTROL=erasedups
 export HISTFILESIZE=10000
 
 # set system aliases
-alias ls='ls -AF'
+alias ls='ls -AFG'
 alias diff='diff -u'
 alias apache2ctl='sudo /opt/local/apache2/bin/apachectl'
 alias mysqlstart='sudo launchctl load /Library/LaunchDaemons/org.macports.mysql5.plist'
@@ -38,3 +38,6 @@ export VISUAL=vim
 # grep
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='32;1;4' # green, bold, underline
+
+# ls
+export LSCOLORS='dxcxcxdxbxegedabagacad'
