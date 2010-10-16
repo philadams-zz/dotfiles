@@ -188,12 +188,6 @@ set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
-" highlight bad whitespace
-highlight BadWhitespace ctermbg=red guibg=red
-
-" flag trailing whitespace as bad
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
 " -------------------------------------------------------------------
 " leader and custom key commands
 " -------------------------------------------------------------------
