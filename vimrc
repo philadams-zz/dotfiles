@@ -172,7 +172,7 @@ if has("gui_running")
     set lines=28 columns=84
     set transparency=15
     set guifont=Monaco:h13 " set gui font
-    colorscheme nature " default color scheme
+    colorscheme thegoodluck " default color scheme
 endif
 
 " -------------------------------------------------------------------
@@ -193,7 +193,7 @@ highlight SpecialKey guifg=#4a4a59
 " -------------------------------------------------------------------
 
 "" set default leader (personal modifier)
-"let mapleader=","
+let mapleader=","
 
 
 " OLD STUFFS
