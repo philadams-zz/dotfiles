@@ -1,5 +1,6 @@
 [core]
     excludesfile = /Users/phil/.gitignore
+    editor = vim
 [user]
     name = Phil Adams
     email = phil@philadams.net
