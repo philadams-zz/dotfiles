@@ -5,7 +5,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:/Library/Frameworks/Python.framework/
 export MANPATH=/usr/local/man:$MANPATH
 
 # customize prompt appearance
-export PS1="\[\e[37;1m\][\u@`/usr/sbin/scutil --get ComputerName`: \W] \[\e[0m\]"
+export PS1="\[\e[31;1m\][\u@`/usr/sbin/scutil --get ComputerName`: \W] \[\e[0m\]"
 
 # bash history control
 export HISTCONTROL=erasedups
