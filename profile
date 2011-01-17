@@ -14,6 +14,7 @@ export HISTFILESIZE=10000
 # set system aliases
 alias ls='ls -AFG'
 alias diff='diff -u'
+alias locate='locate -i'
 alias e='mvim'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 
