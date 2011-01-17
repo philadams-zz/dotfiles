@@ -1,5 +1,5 @@
 # set PATH
-export PATH=/usr/local/bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/Users/phil/Code/android-sdk-mac_86/tools:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7/bin:/Users/phil/Code/android-sdk-mac_86/tools:$PATH
 
 # set MANPATH
 export MANPATH=/usr/local/man:$MANPATH
