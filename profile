@@ -1,8 +1,8 @@
 # set PATH
-export PATH=/usr/local/bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/opt/local/bin:/opt/local/sbin:/Users/phil/Code/android-sdk-mac_86/tools:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/2.6/bin:/Users/phil/Code/android-sdk-mac_86/tools:$PATH
 
 # set MANPATH
-export MANPATH=/usr/local/man:/opt/local/man:$MANPATH
+export MANPATH=/usr/local/man:$MANPATH
 
 # customize prompt appearance
 export PS1="\[\e[37;1m\][\u@`/usr/sbin/scutil --get ComputerName`: \W] \[\e[0m\]"
