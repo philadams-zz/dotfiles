@@ -14,9 +14,6 @@ export HISTFILESIZE=10000
 # set system aliases
 alias ls='ls -AFG'
 alias diff='diff -u'
-alias apache2ctl='sudo /opt/local/apache2/bin/apachectl'
-alias mysqlstart='sudo launchctl load /Library/LaunchDaemons/org.macports.mysql5.plist'
-alias mysqlstop='sudo launchctl unload /Library/LaunchDaemons/org.macports.mysql5.plist'
 alias e='mvim'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 
