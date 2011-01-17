@@ -10,6 +10,7 @@
 " -------------------------------------------------------------------
 
 " pathogen load bundles
+filetype on " calling off when it's already off causes a bad exit status!
 filetype off
 call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
