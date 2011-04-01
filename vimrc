@@ -171,8 +171,8 @@ if has("gui_running")
     set guioptions-=T " no toolbar
     set guioptions-=r " no scrollbar
     set lines=28 columns=84
-    set transparency=15
-    set guifont=Monaco:h13 " set gui font
+    set transparency=0 " some odd bg/transparency issues with light colorscheme
+    set guifont=Droid\ Sans\ Mono:h13 " set gui font
     colorscheme thegoodluck " default color scheme
 endif
 
