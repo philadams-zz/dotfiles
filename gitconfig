@@ -11,6 +11,7 @@
 [alias]
     co = checkout
     st = status
+    s = status -sb
     l = log --pretty=format:'%C(yellow)%h%Creset: %Cred%an%Creset (%Cgreen%ar%Creset)%n %s%n'
     lnc = log --pretty=format:'%h: %an (%ar)%n %s%n'
     lg = log --stat --summary
