@@ -5,7 +5,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7/bin:/Use
 export MANPATH=/usr/local/man:$MANPATH
 
 # customize prompt appearance
-export PS1="\[\e[31;1m\][\u@`/usr/sbin/scutil --get ComputerName`: \W] \[\e[0m\]"
+export PS1="\[\e[33;1m\][\u@`/usr/sbin/scutil --get ComputerName`: \W] \[\e[0m\]"
 
 # bash history control
 export HISTCONTROL=erasedups
@@ -15,6 +15,7 @@ export HISTFILESIZE=10000
 alias ls='ls -AFG'
 alias diff='diff -u'
 alias locate='locate -i'
+alias dos2unix='dos2unix -c mac'
 alias e='mvim'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 
