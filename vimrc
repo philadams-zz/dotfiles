@@ -162,7 +162,7 @@ au BufWrite /private/etc/pw.* set nowritebackup
 if &t_Co > 2 || has("gui_running")
     " ...then use highlighting and a dark bg
     syntax on
-    set bg=dark
+    set background=dark
 endif
 
 if has("gui_running")
@@ -173,7 +173,8 @@ if has("gui_running")
     set lines=28 columns=84
     set transparency=0 " some odd bg/transparency issues with light colorscheme
     set guifont=Droid\ Sans\ Mono:h13 " set gui font
-    colorscheme thegoodluck " default color scheme
+    set background=dark
+    colorscheme solarized " default color scheme
 endif
 
 " -------------------------------------------------------------------
