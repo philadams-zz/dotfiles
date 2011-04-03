@@ -163,6 +163,7 @@ if &t_Co > 2 || has("gui_running")
     " ...then use highlighting and a dark bg
     syntax on
     set background=dark
+    colorscheme solarized " default color scheme
 endif
 
 if has("gui_running")
