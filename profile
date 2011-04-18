@@ -5,7 +5,8 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7/bin:/Use
 export MANPATH=/usr/local/man:$MANPATH
 
 # customize prompt appearance
-export PS1="\[\e[33;1m\][\u@`/usr/sbin/scutil --get ComputerName`: \W] \[\e[0m\]"
+export HOST=`/usr/sbin/scutil --get ComputerName`
+export PS1="\[\e[32;1m\][\u@$HOST: \W] \[\e[0m\]"
 
 # bash history control
 export HISTCONTROL=erasedups
@@ -29,6 +30,11 @@ myip() {
 calc() {
     echo "$1" | bc
 }
+function set_window_title() # set the window title
+{
+  #echo -e "\033]0; ${1:-$USER@$HOST - $SHLVL} \007";
+  echo -e "\033]0; ${1:-$USER@$HOST} \007";
+}
 
 # editors
 export EDITOR=vim
@@ -40,3 +46,6 @@ export GREP_COLOR='32;1;4' # green, bold, underline
 
 # ls
 export LSCOLORS='dxcxcxdxbxegedabagacad'
+
+# set window title
+set_window_title
