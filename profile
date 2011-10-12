@@ -1,5 +1,5 @@
 # set PATH
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7/bin:/Users/phil/Code/android-sdk-mac_86/tools:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7.1/bin:/Users/phil/Code/android-sdk-mac_x86/tools:/Users/phil/Code/android-sdk-mac_x86/platform-tools/:$PATH
 
 # set MANPATH
 export MANPATH=/usr/local/man:$MANPATH
@@ -19,8 +19,12 @@ alias locate='locate -i'
 alias dos2unix='dos2unix -c mac'
 alias e='mvim'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
+alias p='python'
 
 # useful functions
+dff() { # pipe diff thru colordiff
+    diff $* | colordiff
+}
 topten() { # 10 most common recent commands
     history | awk '{print $2}' | sort | uniq -c | sort -rn | grep -v 'topten' | head -10
 }
