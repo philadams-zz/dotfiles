@@ -39,7 +39,7 @@ set autoindent
 set ruler
 
 " show line numbers
-"set number
+set number
 
 " use a visual bell
 set visualbell
@@ -163,7 +163,7 @@ if &t_Co > 2 || has("gui_running")
     " ...then use highlighting and a dark bg
     syntax on
     set background=dark
-    colorscheme solarized " default color scheme
+    colorscheme reloaded " default color scheme
 endif
 
 if has("gui_running")
@@ -173,9 +173,9 @@ if has("gui_running")
     set guioptions-=r " no scrollbar
     set lines=28 columns=84
     set transparency=0 " some odd bg/transparency issues with light colorscheme
-    set guifont=Droid\ Sans\ Mono:h13 " set gui font
-    set background=dark
-    colorscheme solarized " default color scheme
+    set guifont=Anonymous\ Pro:h14 " set gui font
+    set background=light
+    colorscheme thegoodluck " default color scheme
 endif
 
 " -------------------------------------------------------------------
@@ -197,6 +197,10 @@ highlight SpecialKey guifg=#4a4a59
 
 "" set default leader (personal modifier)
 let mapleader=","
+
+" HACKISH AND SHOULD FIX A LA /after/ftplugin/html.vim
+autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType php setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
 
 " OLD STUFFS
