@@ -11,7 +11,9 @@
 [alias]
     co = checkout
     st = status
+    b = branch
     s = status -sb
     l = log --pretty=format:'%C(yellow)%h%Creset: %Cred%an%Creset (%Cgreen%ar%Creset)%n %s%n'
     lnc = log --pretty=format:'%h: %an (%ar)%n %s%n'
+    lnca = log --pretty=format:'%h: %an (%ci)%n %s%n'
     lg = log --stat --summary
