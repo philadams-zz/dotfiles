@@ -54,3 +54,8 @@ export LSCOLORS='dxcxcxdxbxegedabagacad'
 
 # set window title
 set_window_title
+
+# enable autojump
+if [ -f `brew --prefix`/etc/autojump ]; then
+    . `brew --prefix`/etc/autojump
+fi
