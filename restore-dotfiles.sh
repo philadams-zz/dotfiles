@@ -3,11 +3,12 @@
 CWD=`pwd`
 
 ln -snf $CWD/profile ~/.profile
-ln -snf $CWD/vimrc ~/.vimrc
 ln -snf $CWD/inputrc ~/.inputrc
-ln -snf $CWD/vim ~/.vim
-# ln -snf $CWD/vim ~/.vim
+
 ln -snf $CWD/gitconfig ~/.gitconfig
 
-mkdir -p ~/.vim/swap
-mkdir -p ~/.vim/view
+# now using janus for vim config (https://github.com/carlhuda/janus)
+# and tracking .vimrc.before, .vimrc.after, and .janus/
+ln -snf $CWD/janus ~/.janus
+ln -snf $CWD/vimrc.before ~/.vimrc.before
+ln -snf $CWD/vimrc.after ~/.vimrc.after
