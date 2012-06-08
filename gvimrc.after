@@ -1,0 +1,6 @@
+set fuoptions=maxvert,maxhorz  " macvim fullscreen options
+set guioptions-=T              " no toolbar
+set guioptions-=r              " no scrollbar
+set lines=28 columns=84
+set guifont=Anonymous\ Pro:h14 " set gui font
+color thegoodluck              " gui default colorscheme

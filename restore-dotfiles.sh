@@ -12,3 +12,4 @@ ln -snf $CWD/gitconfig ~/.gitconfig
 ln -snf $CWD/janus ~/.janus
 ln -snf $CWD/vimrc.before ~/.vimrc.before
 ln -snf $CWD/vimrc.after ~/.vimrc.after
+ln -snf $CWD/gvimrc.after ~/.gvimrc.after

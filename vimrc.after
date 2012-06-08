@@ -1,2 +1,12 @@
+color redblack
+
 set tabstop=4          " a tab is four spaces
 set shiftwidth=4       " autoindent (<<) is four spaces
+set expandtab          " use spaces when <Tab>ing
+set noincsearch        " don't search as i type
+set wrap               " wrap long lines
+
+" stop <F1> bringing up help when i mean to hit <ESC>
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
