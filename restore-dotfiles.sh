@@ -2,6 +2,7 @@
 
 CWD=`pwd`
 
+ln -snf $CWD/zshrc ~/.zshrc
 ln -snf $CWD/profile ~/.profile
 ln -snf $CWD/inputrc ~/.inputrc
 
