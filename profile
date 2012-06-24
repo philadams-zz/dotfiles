@@ -20,7 +20,9 @@ alias dos2unix='dos2unix -c mac'
 alias e='mvim'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 alias p='python'
+alias pp='bpython'
 alias json='python -m json.tool'
+#alias cat='lolcat'
 
 # useful functions
 dff() { # pipe diff thru colordiff
