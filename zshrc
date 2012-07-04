@@ -24,7 +24,7 @@ export ZSH_THEME="flyingdragon"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -65,11 +65,6 @@ myip() {
 calc() {
     echo "$1" | bc
 }
-function set_window_title() # set the window title
-{
-  #echo -e "\033]0; ${1:-$USER@$HOST - $SHLVL} \007";
-  echo -e "\033]0; ${1:-$USER@$HOST} \007";
-}
 
 # editors
 export EDITOR=vim
@@ -81,9 +76,6 @@ export GREP_COLOR='32;1;4' # green, bold, underline
 
 # ls
 #export LSCOLORS='dxcxcxdxbxegedabagacad'
-
-# set window title
-set_window_title
 
 # enable autojump
 if [ -f `brew --prefix`/etc/autojump ]; then
