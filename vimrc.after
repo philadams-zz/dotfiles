@@ -14,3 +14,7 @@ vnoremap <F1> <ESC>
 " treat j,k as expected when moving on long lines
 noremap k gk
 noremap j gj
+
+" custom filetype settings
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType php setlocal shiftwidth=2 tabstop=2
