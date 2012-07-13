@@ -1,5 +1,5 @@
 [core]
-    excludesfile = /Users/phil/.gitignore
+    excludesfile = /Users/phil/.gitignore-global
     editor = vim
 [user]
     name = Phil Adams
