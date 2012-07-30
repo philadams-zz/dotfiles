@@ -1,4 +1,4 @@
-color jellybeans+
+color redblack
 
 set tabstop=4          " a tab is four spaces
 set shiftwidth=4       " autoindent (<<) is four spaces
