@@ -31,26 +31,27 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # set PATH
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7.1/bin:/Users/phil/.gem/ruby/1.8/bin:/Users/phil/Code/android-sdk-mac_x86/tools:/Users/phil/Code/android-sdk-mac_x86/platform-tools/:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7.1/bin:/Users/phil/.gem/ruby/1.8/bin:/Users/phil/Code/android-sdk-mac_x86/tools:/Users/phil/Code/android-sdk-mac_x86/platform-tools/:/home/phil/Code/android-sdk-linux/tools/:/home/phil/Code/android-sdk-linux/platform-tools/:$PATH
 
 # set MANPATH
 export MANPATH=/usr/local/man:$MANPATH
 
-# bash history control
+# history control
 export HISTCONTROL=erasedups
 export HISTFILESIZE=10000
 
 # set system aliases
-alias ls='ls -AFG'
+alias ls='ls -FG'
 alias diff='diff -u'
 alias locate='locate -i'
 alias dos2unix='dos2unix -c mac'
 alias e='mvim'
+alias open='gnome-open'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 alias p='python'
 alias pp='bpython'
 alias json='python -m json.tool'
-alias cat='lolcat'
+alias xclip='xclip -selection clipboard'  # pbcopy behavior in ubuntu
 
 # useful functions
 dff() { # pipe diff thru colordiff
@@ -78,6 +79,25 @@ export GREP_COLOR='32;1;4' # green, bold, underline
 #export LSCOLORS='dxcxcxdxbxegedabagacad'
 
 # enable autojump
-if [ -f `brew --prefix`/etc/autojump ]; then
-    . `brew --prefix`/etc/autojump
+if [ -f /usr/local/bin/brew ]; then
+    if [ -f `brew --prefix`/etc/autojump ]; then
+        . `brew --prefix`/etc/autojump
+    fi
 fi
+if [ -f /usr/share/autojump/autojump.sh ]; then
+    . /usr/share/autojump/autojump.sh
+fi
+
+# faster zsh autocompletion
+setopt NO_cdable_vars
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+zstyle ':completion:*' hosts off
+setopt menu_complete
+
+# Disable autocorrect
+unsetopt correct_all
+
+# stop complaining about insecure directories
+compinit -u
