@@ -31,7 +31,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # set PATH
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7.1/bin:/Users/phil/.gem/ruby/1.8/bin:/Users/phil/Code/android-sdk-mac_x86/tools:/Users/phil/Code/android-sdk-mac_x86/platform-tools/:/home/phil/Code/android-sdk-linux/tools/:/home/phil/Code/android-sdk-linux/platform-tools/:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7.1/bin:/Users/phil/.gem/ruby/1.8/bin:/bin:/sbin:/Users/phil/Code/android-sdk-mac_x86/tools:/Users/phil/Code/android-sdk-mac_x86/platform-tools/:/home/phil/Code/android-sdk-linux/tools/:/home/phil/Code/android-sdk-linux/platform-tools/:$PATH
 
 # set MANPATH
 export MANPATH=/usr/local/man:$MANPATH
