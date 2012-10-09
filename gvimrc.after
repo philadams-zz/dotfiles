@@ -1,6 +1,11 @@
-set fuoptions=maxvert,maxhorz  " macvim fullscreen options
+if exists(":fuoptions")
+    set fuoptions=maxvert,maxhorz  " macvim fullscreen options
+    set guifont=Anonymous\ Pro:h14 " set gui font
+else
+    set guifont="Anonymous\ Pro\ 13"
+endif
+set lines=28
+set columns=84
 set guioptions-=T              " no toolbar
 set guioptions-=r              " no scrollbar
-set lines=28 columns=84
-set guifont=Anonymous\ Pro:h14 " set gui font
-color thegoodluck              " gui default colorscheme
+color molokai                  " gui default colorscheme
