@@ -31,7 +31,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # set PATH
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7.1/bin:/Users/phil/.gem/ruby/1.8/bin:/bin:/sbin:/Users/phil/Code/android-sdk-mac_x86/tools:/Users/phil/Code/android-sdk-mac_x86/platform-tools/:/home/phil/Code/android-sdk-linux/tools/:/home/phil/Code/android-sdk-linux/platform-tools/:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7.1/bin:/Users/phil/.gem/ruby/1.8/bin:/bin:/sbin:/usr/local/android-sdk-macosx/tools:/usr/local/android-sdk-macosx/platform-tools:/home/phil/Code/android-sdk-linux/tools/:/home/phil/Code/android-sdk-linux/platform-tools/:$PATH
 
 # set MANPATH
 export MANPATH=/usr/local/man:$MANPATH
@@ -46,9 +46,10 @@ alias diff='diff -u'
 alias locate='locate -i'
 alias dos2unix='dos2unix -c mac'
 alias e='mvim'
-alias open='gnome-open'
+#alias open='gnome-open'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 alias p='python'
+alias syspy='/usr/bin/python'
 alias pp='bpython'
 alias json='python -m json.tool'
 alias xclip='xclip -selection clipboard'  # pbcopy behavior in ubuntu
@@ -61,7 +62,7 @@ topten() { # 10 most common recent commands
     history | awk '{print $2}' | sort | uniq -c | sort -rn | grep -v 'topten' | head -10
 }
 myip() {
-    curl http://ip.appspot.com
+    curl -s http://ip.appspot.com
 }
 calc() {
     echo "$1" | bc
@@ -74,6 +75,10 @@ export VISUAL=vim
 # grep
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='32;1;4' # green, bold, underline
+
+# vritualenv and virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+source `which virtualenvwrapper.sh`
 
 # ls
 #export LSCOLORS='dxcxcxdxbxegedabagacad'
