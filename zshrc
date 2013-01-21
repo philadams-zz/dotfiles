@@ -47,7 +47,9 @@ alias locate='locate -i'
 alias dos2unix='dos2unix -c mac'
 alias e='mvim'
 #alias open='gnome-open'
+alias open-chrome='open -a "Google Chrome.app"'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
+alias ql='qlmanage -p "$@" >& /dev/null'
 alias p='python'
 alias syspy='/usr/bin/python'
 alias pp='bpython'
@@ -79,6 +81,8 @@ export GREP_COLOR='32;1;4' # green, bold, underline
 # vritualenv and virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
 source `which virtualenvwrapper.sh`
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+export PIP_RESPECT_VIRTUALENV=true
 
 # ls
 #export LSCOLORS='dxcxcxdxbxegedabagacad'
