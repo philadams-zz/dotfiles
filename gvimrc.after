@@ -1,9 +1,10 @@
-if exists(":fuoptions")
-    set fuoptions=maxvert,maxhorz  " macvim fullscreen options
-    set guifont=Anonymous\ Pro:h14 " set gui font
-else
-    set guifont="Anonymous\ Pro\ 13"
-endif
+"if exists(":fuoptions")
+"    set fuoptions=maxvert,maxhorz  " macvim fullscreen options
+"    set guifont=Ubuntu\ Mono:h18 " set gui font
+"else
+"    set guifont=Ubuntu\ Mono\ 18
+"endif
+set guifont=Ubuntu\ Mono:h14
 set lines=28
 set columns=84
 set guioptions-=T              " no toolbar

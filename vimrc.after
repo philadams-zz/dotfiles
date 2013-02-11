@@ -5,6 +5,10 @@ set shiftwidth=4       " autoindent (<<) is four spaces
 set expandtab          " use spaces when <Tab>ing
 set noincsearch        " don't search as i type
 set wrap               " wrap long lines
+"set linebreak          " wrap only at a linebreak character
+"set nolist             " list disables linebreak
+"set wrapmargin=0       " prevent vim from adding line breaks in new text
+"set textwidth=0        " prevent vim from adding line breaks in new text
 
 " stop <F1> bringing up help when i mean to hit <ESC>
 inoremap <F1> <ESC>
@@ -17,4 +21,6 @@ noremap j gj
 
 " custom filetype settings
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType css setlocal shiftwidth=2 tabstop=2
 autocmd FileType php setlocal shiftwidth=2 tabstop=2
+"autocmd FileType markdown set ai

@@ -3,3 +3,4 @@ let mapleader=","
 " disable various plugins
 call janus#disable_plugin('fugitive', 'poor performance')
 call janus#disable_plugin('syntastic', 'cannot disable per filetype')
+call janus#disable_plugin('vimwiki')
