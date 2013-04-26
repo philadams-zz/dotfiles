@@ -31,7 +31,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 # set PATH
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7.1/bin:/usr/local/Cellar/ruby/1.9.3-p0/bin:/bin:/sbin:/usr/local/android-sdk-macosx/tools:/usr/local/android-sdk-macosx/platform-tools:/home/phil/Code/android-sdk-linux/tools/:/home/phil/Code/android-sdk-linux/platform-tools/:/Developer/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7.1/bin:/usr/local/Cellar/ruby/1.9.3-p0/bin:/bin:/sbin:/usr/local/android-sdk-macosx/tools:/usr/local/android-sdk-macosx/platform-tools:/usr/local/share/npm/bin:/home/phil/Code/android-sdk-linux/tools:/home/phil/Code/android-sdk-linux/platform-tools:/Developer/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH
 
 # set MANPATH
 export MANPATH=/usr/local/man:$MANPATH
@@ -55,6 +55,7 @@ alias syspy='/usr/bin/python'
 alias pp='bpython'
 alias json='python -m json.tool'
 alias xclip='xclip -selection clipboard'  # pbcopy behavior in ubuntu
+alias spotify='osascript /Users/phil/Code/SpotifyControl/SpotifyControl.scpt'
 
 # useful functions
 dff() { # pipe diff thru colordiff
