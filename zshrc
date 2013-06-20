@@ -56,7 +56,7 @@ compinit
 setopt autocd beep extendedglob nomatch
 unsetopt notify
 
-# actually set the damn prompt
+# prompt
 autoload -U colors && colors
-PROMPT="%{$fg_bold[white]%}%{$bg[red]%}%d%{$reset_color%}%{$fg_bold[white]%} >> %{$reset_color%}"
+PROMPT="%{$fg_bold[white]%}%{$bg[red]%}%1d%{$reset_color%}%{$fg_bold[white]%} >> %{$reset_color%}"
 RPROMPT=""
