@@ -5,6 +5,7 @@ CWD=`pwd`
 ln -snf $CWD/zshrc ~/.zshrc
 #ln -snf $CWD/profile ~/.profile
 ln -snf $CWD/inputrc ~/.inputrc
+ln -snf $CWD/tmux.conf ~/.tmux.conf
 
 ln -snf $CWD/gitconfig ~/.gitconfig
 ln -snf $CWD/gitignore-global ~/.gitignore-global
