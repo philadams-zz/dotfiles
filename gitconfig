@@ -10,7 +10,7 @@
     ui = auto
 [alias]
     co = checkout
-    st = status
+    st = status --ignore-submodules=dirty
     b = branch
     s = status -sb
     l = log --pretty=format:'%C(yellow)%h%Creset %Cgreen%an%Creset: %s %Cgreen%ar%Creset'
