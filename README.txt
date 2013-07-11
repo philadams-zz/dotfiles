@@ -15,6 +15,13 @@ And you get something like this:
 
 ![screenshot.png](./screenshot.png)
 
+Note: the vim settings assume you're running
+[janus](http://github.com/carlhuda/janus). You install janus via `curl
+-Lo- https://bit.ly/janus-bootstrap | bash` and update from your
+`~/.vim` dir with a simple `rake`. `./janus` is the intended local spot
+to store janus personalizations - `./restore-dotfiles` drops it at
+`~/.janus`.
+
 future
 ------
 
