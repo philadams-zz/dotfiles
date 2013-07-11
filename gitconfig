@@ -11,8 +11,9 @@
 [alias]
     co = checkout
     st = status --ignore-submodules=dirty
+    s = status -sb --ignore-submodules=dirty
+    dif = diff --ignore-submodules
     b = branch
-    s = status -sb
     l = log --pretty=format:'%C(yellow)%h%Creset %Cgreen%an%Creset: %s %Cgreen%ar%Creset'
     lg = log --pretty=format:'%C(yellow)%h%Creset: %Cred%an%Creset (%Cgreen%ar%Creset)%n %s%n'
     lnc = log --pretty=format:'%h: %an (%ar)%n %s%n'
