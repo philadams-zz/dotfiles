@@ -1,7 +1,12 @@
+# hitting C-a twice sends a C-a to shell,
+# remap screen's 'other' command to C-a o
+escape ^A^A
+bind o other
+
 # force read .profile, .bash_profile, etc.
-shell -$SHELL
+#shell -$SHELL
 
 # somewhat hackishly force backspace key to work 'as expected'
 # ref https://bugzilla.redhat.com/show_bug.cgi?id=11294#c13
-bindkey -d ^? stuff ^H
-bindkey -d ^@ stuff ^H
+#bindkey -d ^? stuff ^H
+#bindkey -d ^@ stuff ^H
