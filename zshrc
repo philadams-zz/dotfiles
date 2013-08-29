@@ -1,5 +1,5 @@
 # path
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/python/2.7.1/bin::/usr/local/share/npm/bin:/Developer/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Developer/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH
 
 alias ls='ls -FG'
 # aliases
@@ -19,6 +19,10 @@ alias syspy='/usr/bin/python'
 # grep
 export GREP_OPTIONS='--color=auto'
 export GREP_COLOR='32;1;4' # green, bold, underline
+
+# ls colors
+# generator: http://geoff.greer.fm/lscolors/
+export LSCOLORS='cxfxcxdxbxegedabagacad'
 
 # editors
 export EDITOR=vim
