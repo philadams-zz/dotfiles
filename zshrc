@@ -4,8 +4,8 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Developer/A
 # tmp hack
 export LIBRARY_PATH=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1
 
-alias ls='ls -FG'
 # aliases
+alias ls='ls -FG'
 alias ll='ls -lh'
 alias la='ls -a'
 alias diff='diff -u'
@@ -18,6 +18,7 @@ alias ql='qlmanage -p "$@" >& /dev/null'
 alias p='python'
 alias json='python -m json.tool'
 alias syspy='/usr/bin/python'
+alias tmux="TERM=screen-256color-bce tmux"
 
 # grep
 export GREP_OPTIONS='--color=auto'
