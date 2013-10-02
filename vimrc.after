@@ -19,6 +19,12 @@ vnoremap <F1> <ESC>
 noremap k gk
 noremap j gj
 
+" toggle smart autoindenting when i paste into a buffer
+set pastetoggle=<F2>
+
+" leader remaps
+map <Leader>t :CtrlP<Enter>
+
 " custom filetype settings
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType css setlocal shiftwidth=2 tabstop=2
