@@ -19,3 +19,5 @@
     lnc = log --pretty=format:'%h: %an (%ar)%n %s%n'
     lnca = log --pretty=format:'%h: %an (%ci)%n %s%n'
     ll = log --stat --summary
+[push]
+	default = simple
