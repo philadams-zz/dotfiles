@@ -1,6 +1,9 @@
 # path
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Developer/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH
 
+# tmp hack
+export LIBRARY_PATH=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1
+
 alias ls='ls -FG'
 # aliases
 alias ll='ls -lh'
