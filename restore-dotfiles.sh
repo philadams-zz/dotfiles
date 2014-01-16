@@ -10,9 +10,8 @@ ln -snf $CWD/tmux.conf ~/.tmux.conf
 ln -snf $CWD/gitconfig ~/.gitconfig
 ln -snf $CWD/gitignore-global ~/.gitignore-global
 
-# now using janus for vim config (https://github.com/carlhuda/janus)
-# and tracking .vimrc.before, .vimrc.after, and .janus/
-ln -snf $CWD/janus ~/.janus
+# now using https://github.com/philadams/maximum-awesome
+# for all tmux, terminal, and vim config
 ln -snf $CWD/vimrc.after ~/.vimrc.after
 ln -snf $CWD/vimrc.before ~/.vimrc.before
 ln -snf $CWD/gvimrc.after ~/.gvimrc.after
