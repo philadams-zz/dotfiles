@@ -3,7 +3,7 @@
     editor = vim
 [user]
     name = Phil Adams
-    email = phil@philadams.net
+    email = philadams.net@gmail.com
 [github]
     user = philadams
 [color]
@@ -21,3 +21,5 @@
     ll = log --stat --summary
 [push]
 	default = simple
+[credential]
+	helper = osxkeychain
