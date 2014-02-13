@@ -1,5 +1,6 @@
 # path
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Developer/Applications/Xcode.app/Contents/Developer/usr/bin:$PATH
+export GOPATH=$HOME/Code/go
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Developer/Applications/Xcode.app/Contents/Developer/usr/bin:$GOPATH/bin:$PATH
 
 # homebrew and cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
