@@ -5,6 +5,11 @@ export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Developer/A
 # homebrew and cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+# load private tokens that don't belong in a public repo
+if [[ -f ~/.private-tokens ]]; then
+  source ~/.private-tokens
+fi
+
 # tmp hack
 export LIBRARY_PATH=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1
 

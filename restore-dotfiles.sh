@@ -7,6 +7,8 @@ ln -snf $CWD/zshrc ~/.zshrc
 ln -snf $CWD/inputrc ~/.inputrc
 ln -snf $CWD/tmux.conf ~/.tmux.conf
 
+touch ~/.private-tokens
+
 ln -snf $CWD/gitconfig ~/.gitconfig
 ln -snf $CWD/gitignore-global ~/.gitignore-global
 
