@@ -33,6 +33,7 @@ alias json='python -m json.tool'
 alias syspy='/usr/bin/python'
 #alias tmux="TERM=screen-256color-bce tmux"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+alias xxargs="tr '\n' '\0' | xargs -0"
 
 # grep
 export GREP_OPTIONS='--color=auto'
