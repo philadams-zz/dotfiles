@@ -68,8 +68,9 @@ myip() {
 # enable autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-# auto-complete
-zstyle :compinstall filename '/Users/phil/.zshrc'
+# more custom stuffs
+zstyle :compinstall filename '/Users/phil/.zshrc'   # autocomplete from zshrc
+fpath=(~/.zsh/completion $fpath)  # load custom completion scripts
 autoload -Uz compinit
 compinit
 
