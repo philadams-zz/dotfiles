@@ -13,6 +13,10 @@ fi
 # tmp hack
 export LIBRARY_PATH=/Applications/Xcode.app/Contents/Developer/usr/llvm-gcc-4.2/lib/gcc/i686-apple-darwin11/4.2.1
 
+# virtualenv and virtualenvwrapper
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
 # aliases
 alias ls='ls -FG'
 alias ll='ls -lh'
