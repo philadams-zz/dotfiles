@@ -11,6 +11,8 @@ helper script:
 
     ./restore-dotfiles.sh
 
+Note that vim and tmux configuration is handled by [maximum-awesome](https://github.com/philadams/maximum-awesome).
+
 And you get something like this:
 
 ![screenshot.png](./screenshot.png)
@@ -25,5 +27,6 @@ to store janus personalizations - `./restore-dotfiles` drops it at
 future
 ------
 
+- break out aliases and useful functions into their own files
 - a better way of having one config file working on both the ubuntu and
   os x machines

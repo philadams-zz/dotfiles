@@ -11,6 +11,7 @@
 
 *.py[cod]
 .ropeproject
+.shovel_tasks
 
 # C extensions
 *.so
