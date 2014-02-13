@@ -64,6 +64,9 @@ topten() { # 10 most common recent commands
 myip() {
     curl -s http://ip.appspot.com
 }
+ding() {
+  afplay $(ls -d1 /System/Library/Sounds/** | gsort -R | head -n1)
+}
 
 # enable autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
