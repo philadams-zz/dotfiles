@@ -31,7 +31,7 @@ alias ql='qlmanage -p "$@" >& /dev/null'
 alias p='python'
 alias json='python -m json.tool'
 alias syspy='/usr/bin/python'
-alias tmux="TERM=screen-256color-bce tmux"
+#alias tmux="TERM=screen-256color-bce tmux"
 
 # grep
 export GREP_OPTIONS='--color=auto'
@@ -56,13 +56,13 @@ bindkey -e
 
 # useful functions
 dff() { # pipe diff thru colordiff
-    diff $* | colordiff
+  diff $* | colordiff
 }
 topten() { # 10 most common recent commands
-    history | awk '{print $2}' | sort | uniq -c | sort -rn | grep -v 'topten' | head -10
+  history | awk '{print $2}' | sort | uniq -c | sort -rn | grep -v 'topten' | head -10
 }
 myip() {
-    curl -s http://ip.appspot.com
+  curl -s http://ip.appspot.com
 }
 ding() {
   afplay $(ls -d1 /System/Library/Sounds/** | gsort -R | head -n1)
