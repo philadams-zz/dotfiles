@@ -17,3 +17,4 @@ ln -snf $CWD/gitignore-global ~/.gitignore-global
 ln -snf $CWD/vimrc.after ~/.vimrc.after
 ln -snf $CWD/vimrc.before ~/.vimrc.before
 ln -snf $CWD/gvimrc.after ~/.gvimrc.after
+ln -snf $CWD/vimrc.bundles.local ~/.vimrc.bundles.local
