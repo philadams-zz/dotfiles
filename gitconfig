@@ -15,7 +15,7 @@
     dif = diff --ignore-submodules
     b = branch
     l = log --pretty=format:'%C(yellow)%h%Creset %Cgreen%an%Creset: %s %Cgreen%ar%Creset'
-    lg = log --pretty=format:'%C(yellow)%h%Creset: %Cred%an%Creset (%Cgreen%ar%Creset)%n %s%n'
+    lg = log --all --graph --decorate --oneline --abbrev-commit
     lnc = log --pretty=format:'%h: %an (%ar)%n %s%n'
     lnca = log --pretty=format:'%h: %an (%ci)%n %s%n'
     ll = log --stat --summary
