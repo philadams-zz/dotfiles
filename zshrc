@@ -1,6 +1,6 @@
 # path
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/share/npm/bin:$HOME/sdk/platform-tools:/Developer/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/texlive/2014/bin/x86_64-darwin:$GOPATH/bin:$HOME/Code/misc-scripts:$PATH
 export GOPATH=$HOME/Code/go
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Developer/Applications/Xcode.app/Contents/Developer/usr/bin:$GOPATH/bin:$PATH
 
 # homebrew and cask
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
@@ -21,19 +21,31 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias ls='ls -FG'
 alias ll='ls -lh'
 alias la='ls -a'
+alias lt='ls -t | head -n15'  # useful for ~/Downloads!
 alias diff='diff -u'
 alias dos2unix='dos2unix -c mac'
-alias e='mvim'
+alias e='/opt/homebrew-cask/Caskroom/macvim/7.4-73/MacVim-snapshot-73/mvim'
+alias git=hub
 alias locate='locate -i'
 alias open-chrome='open -a "Google Chrome.app"'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 alias ql='qlmanage -p "$@" >& /dev/null'
 alias p='python'
+alias pipup="pip list -o | cut -d' ' -f1 | xargs pip install -U"
 alias json='python -m json.tool'
 alias syspy='/usr/bin/python'
 #alias tmux="TERM=screen-256color-bce tmux"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 alias xxargs="tr '\n' '\0' | xargs -0"
+
+# hrpg aliases - tmp testing
+alias h='hrpg'
+alias hs='hrpg status'
+alias hh='hrpg habits'
+alias hd='hrpg dailies'
+alias t='hrpg todos'
+alias ta='hrpg todos add'
+alias td='hrpg todos done'
 
 # grep
 export GREP_OPTIONS='--color=auto'
@@ -87,3 +99,4 @@ unsetopt notify
 autoload -U colors && colors
 PROMPT="%{$fg_bold[white]%}%{$bg[red]%}%1d%{$reset_color%}%{$fg_bold[white]%} >> %{$reset_color%}"
 RPROMPT=""
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
