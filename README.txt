@@ -27,6 +27,7 @@ to store janus personalizations - `./restore-dotfiles` drops it at
 future
 ------
 
-- break out aliases and useful functions into their own files
+- break out aliases and useful functions into their own files a la 
+- mac defaults (https://github.com/holman/dotfiles/blob/master/osx/set-defaults.sh)
 - a better way of having one config file working on both the ubuntu and
   os x machines
