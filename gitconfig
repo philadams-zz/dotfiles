@@ -4,6 +4,7 @@
 [user]
     name = Phil Adams
     email = philadams.net@gmail.com
+    username = philadams
 [github]
     user = philadams
 [color]
@@ -20,6 +21,8 @@
     lnca = log --pretty=format:'%h: %an (%ci)%n %s%n'
     ll = log --stat --summary
 [push]
-	default = simple
+    default = simple
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
+[init]
+    templatedir = /Users/phil/.git-templates
