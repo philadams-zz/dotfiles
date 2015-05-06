@@ -1,5 +1,5 @@
 # path
-export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/share/npm/bin:$HOME/sdk/platform-tools:/Developer/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/texlive/2014/bin/x86_64-darwin:$GOPATH/bin:$HOME/Code/misc-scripts:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:/usr/local/share/npm/bin:$HOME/sdk/platform-tools:/Developer/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/local/texlive/2014/bin/x86_64-darwin:$GOPATH/bin:$HOME/Code/misc-scripts/bin:$PATH
 export GOPATH=$HOME/Code/go
 
 # homebrew and cask
@@ -37,6 +37,8 @@ alias syspy='/usr/bin/python'
 #alias tmux="TERM=screen-256color-bce tmux"
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
 alias xxargs="tr '\n' '\0' | xargs -0"
+alias cmatrix="cmatrix -sba"
+alias fuck='$(thefuck $(fc -ln -1))'
 
 # hrpg aliases - tmp testing
 alias h='hrpg'
@@ -69,6 +71,9 @@ setopt appendhistory
 bindkey -e
 
 # useful functions
+commits-per-day() { # commits per day in this repo
+  git log | awk '/Date/{print " : " $4 " " $3 " " $6}' | uniq -c
+}
 dff() { # pipe diff thru colordiff
   diff $* | colordiff
 }
