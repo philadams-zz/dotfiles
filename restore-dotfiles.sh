@@ -2,19 +2,15 @@
 
 CWD=`pwd`
 
-ln -snf $CWD/zshrc ~/.zshrc
-#ln -snf $CWD/profile ~/.profile
-ln -snf $CWD/inputrc ~/.inputrc
-ln -snf $CWD/tmux.conf ~/.tmux.conf
+# profile, terminals, inputs
+ln -snf $CWD/profile ~/.profile
+#ln -snf $CWD/inputrc ~/.inputrc
+#ln -snf $CWD/tmux.conf ~/.tmux.conf
 
-touch ~/.private-tokens
-
+# git
 ln -snf $CWD/gitconfig ~/.gitconfig
 ln -snf $CWD/gitignore-global ~/.gitignore-global
 
-# now using https://github.com/philadams/maximum-awesome
-# for all tmux, terminal, and vim config
-ln -snf $CWD/vimrc.after ~/.vimrc.after
-ln -snf $CWD/vimrc.before ~/.vimrc.before
-ln -snf $CWD/gvimrc.after ~/.gvimrc.after
-ln -snf $CWD/vimrc.bundles.local ~/.vimrc.bundles.local
+# vim
+ln -snf $CWD/vimrc ~/.vim/vimrc
+mkdir ~/.vim/backup ~/.vim/swap ~/.vim/undo ~/.vim/info ~/.vim/plugged
